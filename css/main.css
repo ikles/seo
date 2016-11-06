@@ -993,6 +993,24 @@ h2 {
   bottom: 440px;
   right: 20px; }
 
+.foot-cons {
+  background-color: #2299ee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: Exo2L;
+  font-size: 16px;
+  height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 241px;
+  display: block;
+  line-height: 1.8;
+  border: none; }
+  .foot-cons:hover {
+    text-decoration: none;
+    color: #FFF; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

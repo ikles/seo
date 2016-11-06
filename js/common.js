@@ -31,4 +31,8 @@ $(function() {
 		$(this).prev().removeClass('hover_a2');
 	});
 
+	$('.social a').click(function(e) {
+		e.preventDefault();
+	});
+
 });
