@@ -1,41 +1,909 @@
-@import _fonts
 @import _mnu
 
-$nr: no-repeat
-$rb: right bottom
-$rt: right top
-$rc: right center
-$cc: center center
-$lc: left center
-$lb: left bottom
-/*input[type=submit]*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
 
-@import _media
+\:focus
+  outline: 0
 
-.wrapper  
-  width: 960px
-  margin: auto
+body
+  line-height: 1
+  color: black
+  background: white
 
-.right
-  float: left
-  width: 240px
-  ul
-    margin-top: 0
+ol, ul
+  list-style: none
 
-.component
-  width: 720px
-  float: right
+table
+  border-collapse: separate
+  border-spacing: 0
+
+caption, th, td
+  text-align: left
+  font-weight: normal
+
+blockquote
+  &:before, &:after
+    content: ""
+
+q
+  &:before, &:after
+    content: ""
+
+blockquote, q
+  quotes: "" ""
+
+li 
+	list-style: none
+
+ul 
+	padding: 0
+	margin: 0
+
+@import _fonts
+
+.nopadding 
+	padding: 0 !important
+	
+.nopadding-l 
+	padding-left: 0 !important
+
+.nopadding-r 
+	padding-right: 0 !important
+
+.wrapper 
+	width: 100%
+	max-width: 1920px 
+	margin: auto
+	overflow: hidden
+	//background-color: #F0F0F0 
+	position: relative
+
+.w_1200
+	margin: auto
+	width: 1200px
+
+.slider
+	width: 100%
+	margin: auto
+	position: relative
+	margin-bottom: 40px
+	//overflow: hidden	
+	min-height: 158px
+	li
+		font-size: 0
+	img
+	.slider_text	
+		background-color: rgba(34, 153, 238,0.75)
+		width: 50%
+		position: absolute
+		right: 0
+		top: 0
+		height: 100%
+		box-sizing: border-box
+
+.slider_text_inner
+	width: 600px
+	margin-top: 270px
+	text-align: right
+	padding-right: 15px
+	padding-left: 55px
+	box-sizing: border-box
+	.like_h2
+		color: white
+		font-family: Exo2
+		font-size: 45px
+		text-transform: uppercase
+		margin-bottom: 45px
+		span		
+			margin-top: 35px
+			display: block
+			color: rgb(250, 250, 250)
+			font-family: Exo2L
+			font-size: 21px
+			text-transform: uppercase
+	p
+		text-shadow: 0 0 2px rgba(0, 0, 0, 0.4)
+		color: rgb(250, 250, 250)
+		font-family: PTSans
+		font-size: 16px
+		line-height: 24px
+
+.read_mor
+	display: block
+	float: right
+	font-family: Exo2EL
+	font-size: 14px  
+	color: rgb(250, 250, 250)
+	text-transform: uppercase
+	margin-top: 43px
+	height: 40px
+	line-height: 2.8
+	box-sizing: border-box
+	padding: 0 20px
+	background: rgb(48, 48, 48) url("../img/arrow_more.png") no-repeat right top
+	padding-right: 60px
+	&:hover, &:focus
+		text-decoration: none
+		color: #FFF 
+
+.arrows_wrap
+	width: 100%
+	position: absolute
+	bottom: 140px
+	left: 0	
+	a
+		display: block
+		float: left
+		width: 48px
+		height: 48px
+		background-repeat: no-repeat
+		background-position: 0 0 
+
+.w_1200.arrows
+	padding-left: 15px
+
+.arrow_l
+	background-image: url('../img/arrow_l.png') 
+
+.arrow_r
+	background-image: url('../img/arrow_r.png') 
+
+.logo
+	display: block
+	position: relative
+	width: 370px
+	text-align: center
+	background-color: #464A4D 
+	min-height: 290px
+	box-sizing: border-box
+	padding: 40px 30px 40px 30px
+	font-size: 0
+	z-index: 10
+	> div
+		padding-top: 8px
+		border-top: 2px solid #2989CE 
+		width: 100%
+		text-align: center
+		color: white
+		font-family: Corki
+		font-size: 31px
+		text-transform: uppercase
+		span 
+			margin-top: 5px
+			display: block
+			color: white
+			font-family: Eurofurenceregular
+			font-size: 14px
+			font-weight: 400
+			text-transform: uppercase
+		
+.top
+	position: absolute
+	width: 100%
+	top: 0
+	left: 0
+
+.top.top2
+	//position: static
+	background-color: #f0f0f0 
+	overflow: visible
+	padding-bottom: 30px	
+
+.col-logo
+	//width: 370px 
+
+.col-logo2
+	//width: 270px
+
+.col-logo-mnu
+	margin-top: 30px
+
+.col-mnu  
+	box-sizing: border-box
+	background-color: #303030
+	//width: 800px 
+	height: 97px
+
+.col-mnu2
+	//width: 900px
+
+.top_mnu.main-mnu
+	height: 97px
+	float: left
+	ul			
+		ul
+			display: none
+			width: 186px
+			background-color: rgb(70, 74, 77)
+			position: absolute
+			padding: 20px 20px			
+			box-sizing: border-box
+			a
+				line-height: 1.2
+				height: auto
+				padding: 10px 0
+				font-family: Exo2L
+				font-size: 15px
+				&:hover
+					text-decoration: underline 
+		> li
+			&:hover
+				ul
+					display: block
+
+.mnu-search-wrap 
+	float: right
+	height: 97px
+
+
+.categ
+	float: right
+	width: 900px
+	background-color: #2090DF 
+	height: 83px
+	padding: 26px 20px
+	box-sizing: border-box
+	font-family: Exo2
+	font-size: 32px
+	color: #FFF  
+	text-transform: uppercase
+
+.search
+	height: 97px
+	width: 97px
+	//overflow: hidden
+	float: right
+	background-color: #464A4D
+	position: relative
+	form
+		display: none
+		width: 180px
+		position: absolute
+		z-index: 10 
+		bottom: -36px
+		right: 0
+		input
+			background-color: #fff
+			border: medium none
+			box-sizing: border-box
+			color: #000
+			font-family: PTSans
+			font-size: 14px
+			height: 26px
+			margin-bottom: 10px
+			padding: 0 25px
+			width: 150px
+			border: none
+			float: left
+			box-sizing: border-box
+			border: 1px solid #ccc
+		input[type=submit]
+			width: 30px
+			box-sizing: border-box
+			padding: 0
+			border: none
+			background: #000 url("../img/glass.png") no-repeat scroll center center
+			background-size:  40%
+		
+form.block
+	display: block
+
+.glass 
+	position: absolute
+	background: url("../img/glass.png") no-repeat center center
+	width: 97px
+	height: 97px
+	cursor: pointer
 
 .top_mnu
-  margin-bottom: 40px
-  ul
-    display: block
-    text-align: center
-    padding: 0
-  li
-    display: inline-block
-    margin: 0 20px
+	position: relative
+	z-index: 1
+	float: right !important
+	ul
+		margin: 0
+	li 
+		float: left
+		list-style: none
+		line-height: 1		
+		color: white
+		font-family: Exo2EL
+		font-size: 16px
+		text-transform: uppercase
+		&:first-child 
+			margin-left: 0
+		&:last-child 
+			margin-right: 0	
+	a 		
+		height: 97px
+		display: block
+		padding: 0 20px
+		color: #FFF 
+		line-height: 6.1
+		&:hover
+			text-decoration: none
+			background-color: rgb(70, 74, 77)
+
+.main-mnu
+	.hover_a
+		background-color: #303030
+s
+.main-mnu
+	.active
+		a
+			background-color: rgb(32, 144, 223)
+
+.bot-mnu
+	.active
+		a
+			background-color: rgb(32, 144, 223)
+
+//.top_mnu.main-mnu ul ul .active a
+//	background-color: rgb(32, 144, 223)
+	
+.w_1200.blocks
+	margin-top: -118px
+	overflow: hidden
+	box-sizing: border-box
+	padding: 0 15px
+	> div
+		background-repeat: no-repeat 
+		height: 295px
+		text-align: center
+		box-sizing: border-box
+		&:first-child
+			background-color: #fff
+			background-image: url('../img/block1_h.png') 
+			background-position: center 70px    
+			.like_h3
+				color: rgb(48,48,48) 
+			p
+				color: rgb(48,48,48) 
+		&:nth-child(2)
+			background-color: rgb(36, 161, 251)
+			background-image: url('../img/block2.png')
+			background-position: center 70px
+		&:nth-child(3)
+			background-color: rgb(34, 153, 238)
+			background-image: url('../img/block3.png')
+			background-position: center 57px  
+		&:nth-child(4)
+			background-color: rgb(32, 144, 223)
+			background-image: url('../img/block4.png')
+			background-position: center 59px  
+		.like_h3
+			color: #fff
+			font-family: Exo2
+			font-size: 24px
+			text-transform: uppercase
+			margin-bottom: 25px
+
+.w_1200.main
+	overflow: hidden
+	//padding-top: 50px
 
 h1
-  margin-top: 0
-  line-height: 1
+	font-family: Exo2L
+	font-size: 42px
+	color: rgb(48, 48, 48) 
+	text-transform: uppercase
+	padding-bottom: 20px
+	margin-bottom: 20px
+	display: block
+	position: relative
+	&:after
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 3px
+		content: "" 
+		background-color: rgb(227, 227, 227)
+		border-left: 42px solid rgb(70, 74, 77)
+
+h2
+	color: rgb(48, 48, 48)
+	font-family: Exo2
+	font-size: 30px
+	text-transform: uppercase
+	display: block
+	position: relative
+	margin-bottom: 20px
+	padding-bottom: 15px
+	line-height: 1
+	&:after
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 3px
+		content: "" 
+		background-color: rgb(227, 227, 227)
+		border-left: 42px solid rgb(70, 74, 77)
+
+.left-consult
+	.order_consalt
+		background-color: #FFF 			
+		p
+			color: rgb(48, 48, 48)
+			font-family: PTSans
+			font-size: 14px
+			margin-bottom: 30px
+		.order_consalt_text
+			position: relative
+			width: 370px
+			text-align: left
+			//padding-right: 127px
+			box-sizing: border-box
+			background: url("../img/line_order.png") repeat-x right 0 top 12px
+			//z-index: 5
+			overflow: hidden
+			margin-bottom: 20px
+			height: 30px
+		.like_h3
+			color: rgb(48, 48, 48)
+			font-family: Exo2L
+			font-size: 24px
+			text-transform: uppercase
+			display: inline-block
+			width: auto
+			padding-right: 15px
+			//position: absolute
+			left: 0
+			//z-index: 10
+			background-color: #FFF 
+		input
+			width: 370px
+			height: 56px
+			background-color: rgb(240, 240, 240)
+			box-sizing: border-box
+			border: none
+			margin-bottom: 10px
+			padding: 0 25px
+			color: #000
+			font-family: PTSans
+			font-size: 14px			
+		input[type=submit]
+			box-sizing: border-box					
+			text-align: center
+			width: 370px
+			height: 56px
+			background-color: rgb(34, 153, 238)
+			color: white
+			font-family: Exo2L
+			font-size: 16px
+			text-transform: uppercase
+
+.col-content
+	padding-bottom: 50px
+	font-family: PTSans
+	font-size: 16px 
+	line-height: 1.4
+	color: rgb(48, 48, 48)
+	p
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+	a
+		color: rgb(34, 153, 238)
+		text-decoration: underline
+
+.blocks_text
+	position: absolute
+	bottom: 30px
+	left: 0
+	width: 100%
+	padding: 0 25px
+	p
+		color: #fff
+		font-family: PTSans
+		font-size: 14px
+		font-weight: 400
+		line-height: 16px
+
+.order_consalt
+	width: 100%
+	height: 112px
+	background-color: rgb(70, 74, 77)
+	margin-top: 45px
+	padding-top: 30px
+	box-sizing: border-box
+
+.left-consult
+	.order_consalt
+		padding-top: 0
+		margin-top: 0
+		margin-bottom: 20px
+
+.order_consalt_form
+	form
+		float: right
+	input
+		width: 270px
+		height: 48px
+		background-color: white
+		border: none
+		font-family: PTSans
+		font-size: 14px
+		color: #000
+		padding: 0 17px  
+		box-sizing: border-box
+		margin-right: 30px
+		float: left
+	input[type=submit]
+		width: 270px
+		height: 48px
+		background-color: rgb(34, 153, 238)
+		border: none
+		color: white
+		font-family: Exo2
+		font-size: 16px
+		font-weight: 400
+		line-height: 16px
+		text-transform: uppercase
+		padding: 0
+		box-sizing: border-box
+		margin-right: 0
+.order_consalt_text	
+	.like_h3
+		color: rgb(250, 250, 250)
+		font-family: Exo2L
+		font-size: 24px
+		text-transform: uppercase
+		margin-bottom: 7px
+	p
+		font-family: PTSans
+		font-size: 14px
+		color: #FFF  
+		line-height: 1.2
+
+.order_consalt.mnu		
+	height: auto	
+	margin-bottom: 80px 
+	background-image: none
+	.like_h3		
+		color: #000
+
+.left__mnu
+	ul		
+		padding: 20px
+	li
+		font-size: 20px
+		margin-bottom: 10px
+		font-family: Exo2L
+		text-transform: uppercase
+	a
+		color: #000
+		opacity: 0.8
+		
+
+
+
+.two_words_about_us
+	background-color: #FFF 
+	overflow: hidden
+.two_words_about_us_like_h2
+	color: rgb(48, 48, 48)
+	font-family: Exo2L
+	font-size: 48px
+	line-height: 48px
+	text-transform: uppercase
+	margin-top: 170px
+	padding-bottom: 22px
+	border-bottom: 4px solid rgb(240, 240, 240) 
+	b
+		font-family: Exo2 
+
+.about_us_text
+	padding-top: 70px
+	color: rgb(48, 48, 48)
+	font-family: PTSans
+	font-size: 16px
+	line-height: 24px
+	padding-bottom: 70px
+	p
+		margin-bottom: 35px
+		&:last-child
+			margin-bottom: 0
+	h2
+		color: rgb(48, 48, 48)
+		font-family: Exo2L
+		font-size: 30px
+		line-height: 48px
+		text-transform: uppercase
+		margin-bottom: 22px
+		padding-bottom: 0
+		line-height: 1
+		&:after
+			display: none
+
+.about_us_heading
+	padding-right: 40px
+	box-sizing: border-box
+	
+.our_services_line
+	@extend .order_consalt
+	margin-top: 0
+	padding-top: 0
+	.w_1200	
+		padding: 0 15px
+
+.our_services_heading
+	background: url("../img/services_icon.png") no-repeat 0 0
+	padding-left: 137px
+	min-height: 112px
+	overflow: hidden
+	padding-top: 30px
+	h2
+		color: rgb(250, 250, 250)
+		font-family: Exo2L
+		font-size: 32px
+		text-transform: uppercase
+		margin-bottom: 0
+		&:after
+			display: none
+	p
+		color: white
+		font-family: PTSans
+		font-size: 14px
+		line-height: 24px
+
+.our_services
+	background-color: #F0F0F0
+	padding-bottom: 65px
+	overflow: hidden
+	p
+		color: rgb(48, 48, 48)
+		font-family: PTSans
+		font-size: 14px
+		line-height: 16px
+	> div
+		.img_a
+			display: block
+			font-size: 0
+			width: 270px
+			height: 192px
+			overflow: hidden
+			position: relative
+			margin-bottom: 18px
+			&:after
+				display: none
+				position: absolute
+				top: 0
+				left: 0
+				background-color: rgba(34, 153, 238, 0.7)
+				content: "" 
+				width: 270px
+				height: 192px
+			&:hover:after
+				display: block
+			&:hover:before
+				background-color: rgb(48, 48, 48)
+			&:before
+				display: block
+				position: absolute
+				width: 40px
+				height: 40px
+				content: ""
+				right: 0
+				bottom: 16px
+				z-index: 10
+				background: rgb(34, 153, 238) url("../img/arrow_min.png") no-repeat center center
+	h3
+		a
+			color: rgb(48, 48, 48)
+			font-family: Exo2SB
+			font-size: 20px
+			text-transform: uppercase		
+			padding-bottom: 15px
+			display: block
+			position: relative
+			margin-bottom: 16px
+			&:hover
+				text-decoration: none
+			&:after
+				display: block
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 3px
+				content: "" 
+				background-color: rgb(227, 227, 227)
+				border-left: 42px solid rgb(70, 74, 77)
+					
+.order_consalt2
+	margin-top: 0
+	
+.last_art
+	background-color: #FFF 
+	.like_h2
+		@extend .two_words_about_us_like_h2
+
+.last_art_text
+	padding-top: 40px
+	h3
+		a
+			span
+				display: block
+				color: rgb(160, 160, 160)
+				font-family: PTSans
+				font-size: 14px
+				text-transform: none
+				margin-top: 12px
+
+.arrow_top
+	display: block
+	position: absolute
+	right: 20px
+	bottom: 405px
+	background: url("../img/arrow_top.png") no-repeat 0 0
+	height: 48px
+	width: 48px
+
+.bottom
+	background-color: #303030 
+	overflow: hidden
+	width: 100%
+	min-height: 263px
+	.w_1200
+		&:first-child	
+			//overflow: hidden
+			min-height: 240px
+	.bot-mnu
+		ul
+			width: 170px
+			padding: 10px 0
+			//overflow: hidden
+			box-sizing: border-box
+			background-color: rgb(70, 74, 77)
+			a
+				display: block
+				width: 100%
+				height: 30px
+				width: 100%
+				font-family: PTSans
+				color: rgb(240, 240, 240)
+				font-size: 14px
+				padding: 7px 18px
+				box-sizing: border-box
+				&:hover
+					text-decoration: none
+					background-color: rgb(84, 88, 91)
+			li
+				position: relative
+				&:hover
+					ul
+						display: block
+			ul
+				display: none
+				position: absolute
+				right: -170px
+				top: 0px
+				z-index: 10
+				a
+					font-size: 13px
+
+.hover_a2
+	text-decoration: none
+	background-color: rgb(84, 88, 91)
+
+.logo2
+	width: 271px
+	height: 97px	
+	overflow: hidden
+	text-align: center
+	padding: 0
+	min-height: auto	
+	> div
+			font-size: 21px
+			top: 147px
+			margin-top: 20px
+			border-bottom: 2px solid #2989ce
+			padding-bottom: 7px
+			span
+				font-size: 10px
+	img
+		width: 155px
+
+.bottom_head
+	height: 63px
+	background-color: white
+	padding: 25px 20px
+	box-sizing: border-box
+	color: rgb(48, 48, 48)
+	font-family: Exo2
+	font-size: 18px
+	text-transform: uppercase
+	display: inline-block
+
+.footer
+	min-height: 93px
+	overflow: hidden
+	box-sizing: border-box
+	background-color: rgb(39, 39, 39)
+
+.footer_contacts
+	> div
+		padding-left: 82px
+		height: 48px
+		color: rgb(240, 240, 240)
+		font-family: PTSans
+		font-size: 14px
+		line-height: 1.2
+		a
+			color: rgb(240, 240, 240)
+			font-family: PTSans
+			font-size: 14px
+
+.footer_adress	
+	padding-top: 6px
+	background: url("../img/footer_adress.png") no-repeat 0 0
+	
+.footer_phone
+	background: url("../img/footer_phone.png") no-repeat 0 0
+	padding-top: 15px
+
+.footer_mail
+	background: url("../img/footer_mail.png") no-repeat 0 0	
+	padding-top: 15px
+
+
+.social
+	margin-top: 72px
+	a
+		display: block
+		width: 64px
+		height: 64px
+		background-color: rgb(34, 153, 238)
+		float: left
+		margin-right: 1px
+		background-repeat: no-repeat 
+		background-position: center center
+		&:hover
+			background-color: rgb(32, 144, 223)
+
+.vk
+	background-image: url('../img/vk.png') 
+.fb
+	background-image: url('../img/fb.png') 
+.goo
+	background-image: url('../img/goo.png') 
+.twit
+	background-image: url('../img/twit.png') 
+
+
+.copy
+	color: rgb(240, 240, 240)
+	font-size: 14px
+	font-weight: 400
+	font-family: PTSans
+	margin-top: 40px
+	padding: 0 15px
+	span
+		font-family: MinionPro
+
+.copy1
+	line-height: 1.2
+
+.scrollTop
+	background: url('../img/arrow_top.png') 0 0 no-repeat
+	width: 50px
+	height: 50px
+	bottom: 440px
+	right: 20px
+
+
+
+
+@import _media
